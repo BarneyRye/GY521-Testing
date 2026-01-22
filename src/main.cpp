@@ -30,7 +30,7 @@ void  loop(){
   data.Tmp = imu.readTemp();                    //Read temperature data
   data.time = millis();                         //Get current time in milliseconds
 
-  Serial.print(data.time); Serial.print(",");
+  Serial.print(data.time); Serial.print(","); //Print to serial in .CSV format
   Serial.print(data.AcX); Serial.print(",");
   Serial.print(data.AcY); Serial.print(",");
   Serial.print(data.AcZ); Serial.print(",");
